@@ -1,0 +1,41 @@
+{
+  "author": {
+    "id": "au-mvdfee9me05u",
+    "keyId": "0f5102b5a107",
+    "name": "XUAN"
+  },
+  "category": "工具",
+  "changelog": "",
+  "conflicts": [],
+  "delisted": false,
+  "description": "任意一个卫星探针（Survey Probe）探测完成后，立即把当前星系所有卫星的矿物组成一次性下发到「卫星探测和分析」窗口；一次探测即可看到全星系卫星矿物，不必逐颗发射探针。矿物数据来自服务端已安装的卫星矿物组成包，与月矿开采产量一致。仅服务端内存补丁，不改客户端文件、数据库与服务端源码。",
+  "displayName": "卫星全扫",
+  "downloadUrls": [
+    {
+      "mirror": "github",
+      "priority": 1,
+      "url": "https://github.com/xxxuan42/evejs-mod-evejs-moonscan-all/releases/download/v1.0.0/evejs-moonscan-all-1.0.0.zip"
+    }
+  ],
+  "evejsVersions": [
+    "261028.1"
+  ],
+  "featured": false,
+  "highlights": [],
+  "history": [],
+  "id": "evejs-moonscan-all",
+  "publishedAt": "2026-11-04",
+  "readme": [
+    "- 探针本身的行为不变：仍按 `explosionDelay`（属性 281）等待、按 `maxVelocity`（属性 37）飞行。\n- 组成包未安装 / 指定星系不在包内（例如 Pochven）时，保持服务端原本的失败关闭行为：只回传探针实际命中的那颗卫星。\n- 兼容 EveJS `261028.1`；需要启动器提供注入总线（`globalThis.__evejsMods`）。"
+  ],
+  "repo": "https://github.com/xxxuan42/evejs-mod-evejs-moonscan-all",
+  "requiresRestart": true,
+  "sha256": "1f12f5449f46171698c3f7635748205a6f1f603b479f72262db3bedbf4cb6234",
+  "sizeBytes": 13828,
+  "tags": [
+    "卫星",
+    "探测",
+    "扫描"
+  ],
+  "version": "1.0.0"
+}
