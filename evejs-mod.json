@@ -8,34 +8,34 @@
   "changelog": "",
   "conflicts": [],
   "delisted": false,
-  "description": "任意一个卫星探针（Survey Probe）探测完成后，立即把当前星系所有卫星的矿物组成一次性下发到「卫星探测和分析」窗口；一次探测即可看到全星系卫星矿物，不必逐颗发射探针。矿物数据来自服务端已安装的卫星矿物组成包，与月矿开采产量一致。仅服务端内存补丁，不改客户端文件、数据库与服务端源码。仅支持 EveJS 261125.3。",
+  "description": "一次卫星探测即可掌握全星系卫星矿物：任意一枚卫星探针（Survey Probe）探测完成后，自动汇总并展示当前星系所有卫星的矿物种类与丰度，无需逐颗发射探针；没有矿物的卫星同样列出，数据与月矿开采产量一致。",
   "displayName": "卫星全扫",
   "downloadUrls": [
     {
       "mirror": "github",
       "priority": 1,
-      "url": "https://github.com/xxxuan42/evejs-mod-evejs-moonscan-all/releases/download/v1.1.1/evejs-moonscan-all-1.1.1.zip"
+      "url": "https://github.com/xxxuan42/evejs-mod-evejs-moonscan-all/releases/download/v1.1.2/evejs-moonscan-all-1.1.2.zip"
     }
   ],
   "evejsVersions": [
-    "261125.3"
+    "261126.2"
   ],
   "featured": false,
   "highlights": [],
   "history": [],
   "id": "evejs-moonscan-all",
-  "publishedAt": "2026-11-26",
+  "publishedAt": "2026-11-27",
   "readme": [
-    "- 探针本身的行为不变：仍按 `explosionDelay`（属性 281）等待、按 `maxVelocity`（属性 37）飞行。\n- 组成包未安装 / 指定星系不在包内（例如 Pochven）时，保持服务端原本的失败关闭行为：只回传探针实际命中的那颗卫星。\n- **仅支持 EveJS `261125.3`**（服务端 `E:\\Xuan\\YX\\EVE-X4\\EveJS-261125.3`）与客户端 `3724492`\n  （客户端 `D:\\XUAN\\EVE-3724492`）；老版本服务端不再兼容。需要启动器提供注入总线（`globalThis.__evejsMods`）。\n- 客户端契约已在 `3724492` 上复核：`OnMoonScanComplete(moonID, {typeID: 丰度})` 与\n  `OnScanNoMaterials(moonID)` 名称、参数均未变化，「卫星探测和分析」仍按字典渲染，无需客户端补丁。"
+    "- 探针本身的行为不变：仍按 `explosionDelay`（属性 281）等待、按 `maxVelocity`（属性 37）飞行。\n- 组成包未安装 / 指定星系不在包内（例如 Pochven）时，保持服务端原本的失败关闭行为：只回传探针实际命中的那颗卫星。\n- **仅支持 EveJS `261126.2`**（服务端 `E:\\Xuan\\YX\\EVE-X4\\EveJS-261125.3`）与客户端 `3724492`\n  （客户端 `D:\\XUAN\\EVE-3724492`）；老版本服务端不再兼容。需要启动器提供注入总线（`globalThis.__evejsMods`）。\n- 客户端契约已在 `3724492` 上复核：`OnMoonScanComplete(moonID, {typeID: 丰度})` 与\n  `OnScanNoMaterials(moonID)` 名称、参数均未变化，「卫星探测和分析」仍按字典渲染，无需客户端补丁。"
   ],
   "repo": "https://github.com/xxxuan42/evejs-mod-evejs-moonscan-all",
   "requiresRestart": true,
-  "sha256": "0747321b770fb3bfcd21d98a9c7e060ffa268b47ebdfc52b4efbaa59c4457f73",
-  "sizeBytes": 16216,
+  "sha256": "57028bfbce34c441790f917616c74a097ba5ec725f4b4b5c99318ec1ffc26f1d",
+  "sizeBytes": 16294,
   "tags": [
     "卫星",
     "探测",
     "扫描"
   ],
-  "version": "1.1.1"
+  "version": "1.1.2"
 }
